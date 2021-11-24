@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://schemas.brigade.sh/schemas-v2/project.json
+apiVersion: brigade.sh/v2
+kind: Project
+metadata:
+  id: hello-brigade
+description: My new Brigade project
+spec:
+  ## Subscribe below to any events that should trigger your script.
+  ## The example depicts a subscription to "exec" events 
+  ## originating from the Brigade CLI. 
+  eventSubscriptions:
+  - source: brigade.sh/cli
+    types:
+    - exec
+  workerTemplate:
+    logLevel: DEBUG
+    git:
+      cloneURL: https://github.com/krancour/hello-brigade.git

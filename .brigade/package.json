@@ -1,0 +1,9 @@
+{
+  "name": "hello-brigade",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@brigadecore/brigadier": "^2.0.0-rc.1"
+  }
+}
